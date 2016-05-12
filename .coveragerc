@@ -1,0 +1,7 @@
+[run]
+source = pinax
+omit = pinax/cohorts/tests/*,pinax/cohorts/admin.py
+branch = 1
+
+[report]
+omit = pinax/cohorts/tests/*,pinax/cohorts/admin.py
