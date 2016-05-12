@@ -1,14 +1,18 @@
-Pinax Starter App
-=================
+Pinax Cohorts
+=============
+
+Create cohorts for inviting people off your pinax-waitinglist waiting list to
+your private beta site.
+
 
 .. image:: http://slack.pinaxproject.com/badge.svg
    :target: http://slack.pinaxproject.com/
-   
-.. image:: https://img.shields.io/travis/<user_or_org_name>/pinax-cohorts.svg
-   :target: https://travis-ci.org/<user_or_org_name>/pinax-cohorts
 
-.. image:: https://img.shields.io/coveralls/<user_or_org_name>/pinax-cohorts.svg
-   :target: https://coveralls.io/r/<user_or_org_name>/pinax-cohorts
+.. image:: https://img.shields.io/travis/pinax/pinax-cohorts.svg
+   :target: https://travis-ci.org/pinax/pinax-cohorts
+
+.. image:: https://img.shields.io/coveralls/pinax/pinax-cohorts.svg
+   :target: https://coveralls.io/r/pinax/pinax-cohorts
 
 .. image:: https://img.shields.io/pypi/dm/pinax-cohorts.svg
    :target:  https://pypi.python.org/pypi/pinax-cohorts/
@@ -16,45 +20,9 @@ Pinax Starter App
 .. image:: https://img.shields.io/pypi/v/pinax-cohorts.svg
    :target:  https://pypi.python.org/pypi/pinax-cohorts/
 
-.. image:: https://img.shields.io/badge/license-<license>-blue.svg
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
    :target:  https://pypi.python.org/pypi/pinax-cohorts/
-   
 
-Pinax
-------
-
-Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates. 
-This collection can be found at http://pinaxproject.com.
-
-
-pinax-starter-app
-------------------
-   
-``pinax-starter-app`` is a starter app template for Pinax apps.
-   
-Quickly setup the scaffolding for your django app.
-
-What you get:
-
-* test infrastructure
-* Travis configuration with coveralls
-* documentation instrastructure
-* MIT LICENSE
-* setup.py
-
-
-Getting Started
-----------------
-
-Execute::
-
-    pip install Django
-    django-admin.py startapp --template=https://github.com/pinax/pinax-starter-app/zipball/master --extension=py,rst,in,sh,rc,yml,ini,coveragerc <project_name>
-
-
-After you are running you have a fresh app, first update this readme by removing
-everything above and including this line and unindenting everything below this line. Also
-remember to edit the ``<user_or_org_name>`` in the travis and coveralls badge/links::
 
 
 Running the Tests
@@ -65,13 +33,6 @@ Running the Tests
        $ pip install detox
        $ detox
 
-
-Documentation
----------------
-
-The ``pinax-starter-app`` documentation is currently under construction. If you would like to help us write documentation, please join our Pinax Project Slack team and let us know! The Pinax documentation is available at http://pinaxproject.com/pinax/.
-
-
 Contribute
 ----------------
 
@@ -79,7 +40,7 @@ See this blog post http://blog.pinaxproject.com/2016/02/26/recap-february-pinax-
 
 In case of any questions we recommend you join our Pinax Slack team (http://slack.pinaxproject.com) and ping us there instead of creating an issue on GitHub. Creating issues on GitHub is of course also valid but we are usually able to help you faster if you ping us in Slack.
 
-We also highly recommend reading our Open Source and Self-Care blog post (http://blog.pinaxproject.com/2016/01/19/open-source-and-self-care/).  
+We also highly recommend reading our Open Source and Self-Care blog post (http://blog.pinaxproject.com/2016/01/19/open-source-and-self-care/).
 
 
 Code of Conduct
