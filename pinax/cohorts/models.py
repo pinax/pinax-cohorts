@@ -9,7 +9,6 @@ from django.utils.translation import ugettext_lazy as _
 from account.models import SignupCode, SignupCodeResult
 
 Member = collections.namedtuple("Member", ["email", "signup_code", "user", "invited"])
-User = getattr(settings, "AUTH_USER_MODEL", "auth.User")
 
 
 @python_2_unicode_compatible
@@ -83,5 +82,5 @@ class UserCohort(models.Model):
     Upon signup we create an instance of this model associating the new user
     and their cohort
     """
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL)
     cohort = models.ForeignKey(Cohort)

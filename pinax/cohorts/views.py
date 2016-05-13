@@ -1,6 +1,6 @@
-from django.conf import settings
 from django.shortcuts import render, redirect, get_object_or_404
 
+from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import permission_required
 
 from account.models import SignupCode
@@ -9,9 +9,6 @@ from pinax.waitinglist.models import WaitingListEntry  # @@@ decouple?
 
 from .forms import CohortCreateForm
 from .models import Cohort, SignupCodeCohort
-
-
-User = getattr(settings, "AUTH_USER_MODEL", "auth.User")
 
 
 @login_required
@@ -53,7 +50,7 @@ def cohort_detail(request, pk):
     waiting_list = WaitingListEntry.objects.exclude(
         email__in=SignupCode.objects.values("email")
     ).exclude(
-        email__in=User.objects.values("email")
+        email__in=get_user_model().objects.values("email")
     )
 
     ctx = {
@@ -78,7 +75,7 @@ def cohort_member_add(request, pk):
         waiting_list = WaitingListEntry.objects.exclude(
             email__in=SignupCode.objects.values("email")
         ).exclude(
-            email__in=User.objects.values("email")
+            email__in=get_user_model().objects.values("email")
         )
         emails = waiting_list.values_list("email", flat=True)[:N]
     else:
