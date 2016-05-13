@@ -12,6 +12,8 @@ DEFAULT_SETTINGS = dict(
         "django.contrib.auth",
         "django.contrib.contenttypes",
         "django.contrib.sites",
+        "account",
+        "pinax.waitinglist",
         "pinax.cohorts",
         "pinax.cohorts.tests"
     ],

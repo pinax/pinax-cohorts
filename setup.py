@@ -26,6 +26,10 @@ setup(
     test_suite="runtests.runtests",
     tests_require=[
     ],
+    install_requires=[
+        "django-user-accounts>=1.3.1",
+        "pinax-waitinglist>=1.1.1"
+    ],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Web Environment",
