@@ -73,8 +73,8 @@ class SignupCodeCohort(models.Model):
             email__in=User.objects.values("email")
         )
     """
-    signup_code = models.OneToOneField(SignupCode)
-    cohort = models.ForeignKey(Cohort)
+    signup_code = models.OneToOneField(SignupCode, on_delete=models.CASCADE)
+    cohort = models.ForeignKey(Cohort, on_delete=models.CASCADE)
 
 
 class UserCohort(models.Model):
@@ -82,5 +82,5 @@ class UserCohort(models.Model):
     Upon signup we create an instance of this model associating the new user
     and their cohort
     """
-    user = models.OneToOneField(settings.AUTH_USER_MODEL)
-    cohort = models.ForeignKey(Cohort)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    cohort = models.ForeignKey(Cohort, on_delete=models.CASCADE)

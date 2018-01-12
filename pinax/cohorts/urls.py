@@ -2,6 +2,7 @@ from django.conf.urls import url
 
 from . import views
 
+app_name = "pinax_cohorts"
 
 urlpatterns = [
     url(r"^$", views.cohort_list, name="list"),
