@@ -17,7 +17,7 @@ DEFAULT_SETTINGS = dict(
         "pinax.cohorts",
         "pinax.cohorts.tests"
     ],
-    MIDDLEWARE_CLASSES=[],
+    MIDDLEWARE=[],
     DATABASES={
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
