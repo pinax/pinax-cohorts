@@ -1,4 +1,4 @@
-![](http://pinaxproject.com/pinax-design/patches/pinax-blank.svg)
+![](http://pinaxproject.com/pinax-design/patches/pinax-cohorts.svg)
 
 # Pinax Cohorts
 
