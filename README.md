@@ -59,29 +59,38 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 To install pinax-cohorts:
 
-    pip install pinax-cohorts
+```shell
+    $ pip install pinax-cohorts
+```
 
 Add `pinax.cohorts` to your `INSTALLED_APPS` setting:
 
 ```python
     INSTALLED_APPS = [
-        ...
+        # other apps
         "pinax.cohorts",
-        ...
     ]
 ```
 
 Then add `pinax.cohorts.urls` to your project urlpatterns:
 
+```python
     urlpatterns = [
-        ...
+        # other urls
         url(r"^cohorts/", include("pinax.cohorts.urls", namespace="pinax_cohorts")),
-        ...
     ]
+```
 
-### Usage
 
 ## Change Log
+
+### 0.3
+
+* Add django>=1.11 to installation requirements
+* Update CI configuration
+* Remove unused paths from MANIFEST
+* Remove doc build support
+* Remove unused files
 
 ### 0.2
 
