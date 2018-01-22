@@ -84,6 +84,11 @@ Then add `pinax.cohorts.urls` to your project urlpatterns:
 
 ## Change Log
 
+### 0.4
+
+* fix test urls
+* fix import sorting
+
 ### 0.3
 
 * Add django>=1.11 to installation requirements
