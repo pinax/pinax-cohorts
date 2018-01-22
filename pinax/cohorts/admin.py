@@ -1,10 +1,6 @@
 from django.contrib import admin
 
-from .models import (
-    Cohort,
-    SignupCodeCohort,
-    UserCohort
-)
+from .models import Cohort, SignupCodeCohort, UserCohort
 
 
 class SignupCodeCohortInline(admin.TabularInline):

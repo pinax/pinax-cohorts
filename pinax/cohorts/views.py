@@ -1,10 +1,9 @@
-from django.shortcuts import render, redirect, get_object_or_404
-
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import permission_required
+from django.shortcuts import get_object_or_404, redirect, render
 
-from account.models import SignupCode
 from account.decorators import login_required
+from account.models import SignupCode
 from pinax.waitinglist.models import WaitingListEntry  # @@@ decouple?
 
 from .forms import CohortCreateForm
