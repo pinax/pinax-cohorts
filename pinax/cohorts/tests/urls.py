@@ -1,6 +1,6 @@
-from django.conf.urls import include
+from django.conf.urls import include, url
 
 
 urlpatterns = [
-    (r"^", include("pinax.cohorts.urls", namespace="pinax_cohorts")),
+    url(r"^", include("pinax.cohorts.urls", namespace="pinax_cohorts")),
 ]
