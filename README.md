@@ -84,6 +84,10 @@ Then add `pinax.cohorts.urls` to your project urlpatterns:
 
 ## Change Log
 
+### 0.6
+
+* Fix permission references
+
 ### 0.5
 
 * Update pinax-waitinglist version requirement

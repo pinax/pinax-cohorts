@@ -11,7 +11,7 @@ from .models import Cohort, SignupCodeCohort
 
 
 @login_required
-@permission_required("pinax-chorts.manage_cohorts")
+@permission_required("cohorts.manage_cohorts")
 def cohort_list(request):
 
     ctx = {
@@ -21,7 +21,7 @@ def cohort_list(request):
 
 
 @login_required
-@permission_required("pinax-chorts.manage_cohorts")
+@permission_required("cohorts.manage_cohorts")
 def cohort_create(request):
 
     if request.method == "POST":
@@ -40,7 +40,7 @@ def cohort_create(request):
 
 
 @login_required
-@permission_required("pinax-chorts.manage_cohorts")
+@permission_required("cohorts.manage_cohorts")
 def cohort_detail(request, pk):
 
     cohort = get_object_or_404(Cohort, pk=pk)
@@ -60,7 +60,7 @@ def cohort_detail(request, pk):
 
 
 @login_required
-@permission_required("pinax-chorts.manage_cohorts")
+@permission_required("cohorts.manage_cohorts")
 def cohort_member_add(request, pk):
 
     cohort = Cohort.objects.get(pk=pk)
@@ -94,7 +94,7 @@ def cohort_member_add(request, pk):
 
 
 @login_required
-@permission_required("pinax-chorts.manage_cohorts")
+@permission_required("cohorts.manage_cohorts")
 def cohort_send_invitations(request, pk):
 
     cohort = Cohort.objects.get(pk=pk)

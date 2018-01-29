@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-VERSION = "0.5"
+VERSION = "0.6"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-cohorts.svg
     :target: https://pypi.python.org/pypi/pinax-cohorts/
