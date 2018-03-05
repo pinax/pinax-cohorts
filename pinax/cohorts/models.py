@@ -8,7 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from account.models import SignupCode, SignupCodeResult
 
-Member = collections.namedtuple("Member", ["email", "signup_code", "user", "invited"])
+Member = collections.namedtuple("Member", ["email", "signup_code", "user", "invited", "expired"])
 
 
 @python_2_unicode_compatible
@@ -36,7 +36,8 @@ class Cohort(models.Model):
                     scc.signup_code.email,
                     scc.signup_code,
                     user,
-                    bool(scc.signup_code.sent)
+                    bool(scc.signup_code.sent),
+                    timezone.now() > scc.signup_code.expiry
                 )
             )
         return members
