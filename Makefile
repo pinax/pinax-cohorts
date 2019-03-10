@@ -1,4 +1,4 @@
-all: init docs test
+all: init test
 
 init:
 	python setup.py develop
