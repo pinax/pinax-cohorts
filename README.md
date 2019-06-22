@@ -2,9 +2,6 @@
 
 # Pinax Cohorts
 
-Create cohorts for inviting people off your pinax-waitinglist waiting list to
-your private beta site.
-
 [![](https://img.shields.io/pypi/v/pinax-cohorts.svg)](https://pypi.python.org/pypi/pinax-cohorts/)
 
 [![CircleCi](https://img.shields.io/circleci/project/github/pinax/pinax-cohorts.svg)](https://circleci.com/gh/pinax/pinax-cohorts)
