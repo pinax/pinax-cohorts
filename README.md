@@ -21,6 +21,7 @@
   * [Supported Django and Python versions](#supported-django-and-python-versions)
 * [Documentation](#documentation)
   * [Installation](#installation)
+  * [Templates](#templates)
 * [Change Log](#change-log)
 * [Contribute](#contribute)
 * [Code of Conduct](#code-of-conduct)
@@ -76,6 +77,40 @@ Then add `pinax.cohorts.urls` to your project urlpatterns:
         url(r"^cohorts/", include("pinax.cohorts.urls", namespace="pinax_cohorts")),
     ]
 ```
+
+### Templates
+
+Default templates are provided by the `pinax-templates` app in the
+[cohorts](https://github.com/pinax/pinax-templates/tree/master/pinax/templates/templates/pinax/cohorts)
+section of that project.
+
+Reference pinax-templates
+[installation instructions](https://github.com/pinax/pinax-templates/blob/master/README.md#installation)
+to include these templates in your project.
+
+View live `pinax-templates` examples and source at [Pinax Templates](https://templates.pinaxproject.com/pinax-cohorts/)!
+
+#### Customizing Templates
+
+Override the default `pinax-templates` templates by copying them into your project
+subdirectory `pinax/cohorts/` on the template path and modifying as needed.
+
+For example if your project doesn't use Bootstrap, copy the desired templates
+then remove Bootstrap and Font Awesome class names from your copies.
+Remove class references like `class="btn btn-success"` and `class="icon icon-pencil"` as well as
+`bootstrap` from the `{% load i18n bootstrap %}` statement.
+Since `bootstrap` template tags and filters are no longer loaded, you'll also need to update
+`{{ form|bootstrap }}` to `{{ form }}` since the "bootstrap" filter is no longer available.
+
+#### `_members.html`
+
+#### `_status.html`
+
+#### `cohort_create.html`
+
+#### `cohort_detail.html`
+
+#### `cohort_list.html`
 
 
 ## Change Log
