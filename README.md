@@ -69,7 +69,7 @@ Add `pinax.cohorts` to your `INSTALLED_APPS` setting:
     ]
 ```
 
-Then add `pinax.cohorts.urls` to your project urlpatterns:
+Add `pinax.cohorts.urls` to your project urlpatterns:
 
 ```python
     urlpatterns = [
