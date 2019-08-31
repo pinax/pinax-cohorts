@@ -84,6 +84,10 @@ Then add `pinax.cohorts.urls` to your project urlpatterns:
 
 ## Change Log
 
+### 0.7
+
+* Add expired field to Member, to show signup code has expired, if expiry date has passed
+
 ### 0.6
 
 * Fix permission references
