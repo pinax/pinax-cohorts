@@ -115,6 +115,10 @@ Since `bootstrap` template tags and filters are no longer loaded, you'll also ne
 
 ## Change Log
 
+### 0.7
+
+* Add expired field to Member, to show signup code has expired, if expiry date has passed
+
 ### 0.6
 
 * Fix permission references
