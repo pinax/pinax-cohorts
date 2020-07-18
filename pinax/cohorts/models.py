@@ -3,7 +3,6 @@ import collections
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
-from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 
 from account.models import SignupCode, SignupCodeResult
@@ -11,7 +10,6 @@ from account.models import SignupCode, SignupCodeResult
 Member = collections.namedtuple("Member", ["email", "signup_code", "user", "invited", "expired"])
 
 
-@python_2_unicode_compatible
 class Cohort(models.Model):
 
     name = models.CharField(_("name"), max_length=35)
